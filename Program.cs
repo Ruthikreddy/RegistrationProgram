@@ -8,7 +8,7 @@ namespace RegexExp
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Program ");
-            string FirstName;
+            string FirstName,LastName;
             String namePattern;
             while(true)
             {
@@ -26,7 +26,23 @@ namespace RegexExp
                     Console.WriteLine("Invalid First Name");
                 }
             }
+            while (true)
+            {
+                namePattern = @"([A-Z]+)[a-zA-Z]{2,}";
+                Console.WriteLine("Enter your Last Name with First letter in Capitals ");
+                LastName = Console.ReadLine();
+                Regex regex = new Regex(namePattern);
+                if (regex.IsMatch(LastName))
+                {
+                    Console.WriteLine("Valid Last Name");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Last Name");
+                }
             }
+        }
         }
     }
 
