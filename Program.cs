@@ -8,7 +8,7 @@ namespace RegexExp
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Program ");
-            string FirstName,LastName;
+            string FirstName,LastName,Email;
             String namePattern;
             while(true)
             {
@@ -40,6 +40,22 @@ namespace RegexExp
                 else
                 {
                     Console.WriteLine("Invalid Last Name");
+                }
+            }
+            while (true)
+            {
+                Console.WriteLine("Enter your Email-id: ");
+                Email = Console.ReadLine();
+                namePattern = "^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
+                Regex regex = new Regex(namePattern);
+                if (regex.IsMatch(Email))
+                {
+                    Console.WriteLine("Valid Email-Id");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Email-Id");
                 }
             }
         }
