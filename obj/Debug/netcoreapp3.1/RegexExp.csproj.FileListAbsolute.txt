@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.AssemblyInfo.cs
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\RegexExp\bin\Debug\netcoreapp3.1\RegexExp.exe
+C:\Users\HP\source\repos\RegexExp\bin\Debug\netcoreapp3.1\RegexExp.deps.json
+C:\Users\HP\source\repos\RegexExp\bin\Debug\netcoreapp3.1\RegexExp.runtimeconfig.json
+C:\Users\HP\source\repos\RegexExp\bin\Debug\netcoreapp3.1\RegexExp.runtimeconfig.dev.json
+C:\Users\HP\source\repos\RegexExp\bin\Debug\netcoreapp3.1\RegexExp.dll
+C:\Users\HP\source\repos\RegexExp\bin\Debug\netcoreapp3.1\RegexExp.pdb
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.dll
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.pdb
+C:\Users\HP\source\repos\RegexExp\obj\Debug\netcoreapp3.1\RegexExp.genruntimeconfig.cache
