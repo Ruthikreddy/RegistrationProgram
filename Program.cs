@@ -8,7 +8,7 @@ namespace RegexExp
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Program ");
-            string FirstName,LastName,Email,PhoneNo;
+            string FirstName,LastName,Email,PhoneNo,Password;
             String Pattern;
             while(true)
             {
@@ -64,14 +64,30 @@ namespace RegexExp
                 PhoneNo = Console.ReadLine();
                 Pattern = "^[0-9]{2}[ ][0-9]{10}$";
                 Regex regex = new Regex(Pattern);
-                if (regex.IsMatch(phoneNo))
+                if (regex.IsMatch(PhoneNo))
                 {
-                    Console.WriteLine("Valid Phone Number: " + phoneNo);
+                    Console.WriteLine("Valid Phone Number: " + PhoneNo);
                     break;
                 }
                 else
                 {
                     Console.WriteLine("Invalid Phone Number");
+                }
+            }
+            while (true)
+            {
+                Console.WriteLine("Set a password: ");
+                Password = Console.ReadLine();
+                Pattern = "^(=?.*[A-Z]).{8,}$";
+                Regex regex = new Regex(Pattern);
+                if (regex.IsMatch(Password))
+                {
+                    Console.WriteLine("Please enter strong password");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Enter password again with minimum 8 Characters with one capital letter");
                 }
             }
         }
