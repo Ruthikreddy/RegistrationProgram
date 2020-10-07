@@ -78,7 +78,7 @@ namespace RegexExp
             {
                 Console.WriteLine("Set a password: ");
                 Password = Console.ReadLine();
-                Pattern = @"[\w]{8,}";
+                Pattern = "^(=?.*[A-Z]).{8,}$";
                 Regex regex = new Regex(Pattern);
                 if (regex.IsMatch(Password))
                 {
@@ -87,7 +87,7 @@ namespace RegexExp
                 }
                 else
                 {
-                    Console.WriteLine("Enter password again with minimum 8 Characters");
+                    Console.WriteLine("Enter password again with minimum 8 Characters with one capital letter");
                 }
             }
         }
