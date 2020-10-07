@@ -8,14 +8,14 @@ namespace RegexExp
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Program ");
-            string FirstName,LastName,Email;
-            String namePattern;
+            string FirstName,LastName,Email,PhoneNo;
+            String Pattern;
             while(true)
             {
-                namePattern = @"([A-Z]+)[a-zA-Z]{2,}";
+                Pattern = @"([A-Z]+)[a-zA-Z]{2,}";
                 Console.WriteLine("Enter your First Name with First letter in Capitals ");
                 FirstName = Console.ReadLine();
-                Regex regex = new Regex(namePattern);
+                Regex regex = new Regex(Pattern);
                 if(regex.IsMatch(FirstName))
                 {
                     Console.WriteLine("Valid First Name");
@@ -28,10 +28,10 @@ namespace RegexExp
             }
             while (true)
             {
-                namePattern = @"([A-Z]+)[a-zA-Z]{2,}";
+                Pattern = @"([A-Z]+)[a-zA-Z]{2,}";
                 Console.WriteLine("Enter your Last Name with First letter in Capitals ");
                 LastName = Console.ReadLine();
-                Regex regex = new Regex(namePattern);
+                Regex regex = new Regex(Pattern);
                 if (regex.IsMatch(LastName))
                 {
                     Console.WriteLine("Valid Last Name");
@@ -46,8 +46,8 @@ namespace RegexExp
             {
                 Console.WriteLine("Enter your Email-id: ");
                 Email = Console.ReadLine();
-                namePattern = "^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
-                Regex regex = new Regex(namePattern);
+                Pattern = "^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
+                Regex regex = new Regex(Pattern);
                 if (regex.IsMatch(Email))
                 {
                     Console.WriteLine("Valid Email-Id");
@@ -56,6 +56,22 @@ namespace RegexExp
                 else
                 {
                     Console.WriteLine("Invalid Email-Id");
+                }
+            }
+            while (true)
+            {
+                Console.WriteLine("Enter the Valid Phone Number: ");
+                PhoneNo = Console.ReadLine();
+                Pattern = "^[0-9]{2}[ ][0-9]{10}$";
+                Regex regex = new Regex(Pattern);
+                if (regex.IsMatch(phoneNo))
+                {
+                    Console.WriteLine("Valid Phone Number: " + phoneNo);
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Phone Number");
                 }
             }
         }
