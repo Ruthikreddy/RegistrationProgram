@@ -78,7 +78,7 @@ namespace RegexExp
             {
                 Console.WriteLine("Set a password: ");
                 Password = Console.ReadLine();
-                Pattern = "^(=?.*[A-Z]).{8,}$";
+                Pattern = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
                 Regex regex = new Regex(Pattern);
                 if (regex.IsMatch(Password))
                 {
